@@ -11,6 +11,8 @@
 		07A8B7702A3DEA8B00436696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B76F2A3DEA8B00436696 /* ContentView.swift */; };
 		07A8B7722A3DEA8C00436696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A8B7712A3DEA8C00436696 /* Assets.xcassets */; };
 		07A8B7752A3DEA8C00436696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A8B7742A3DEA8C00436696 /* Preview Assets.xcassets */; };
+		07A8B77D2A3DEB8A00436696 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B77C2A3DEB8A00436696 /* HealthKitManager.swift */; };
+		07A8B77F2A3DEC4600436696 /* HealthKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B77E2A3DEC4600436696 /* HealthKitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		07A8B76F2A3DEA8B00436696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		07A8B7712A3DEA8C00436696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A8B7742A3DEA8C00436696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07A8B77B2A3DEADE00436696 /* Steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steps.entitlements; sourceTree = "<group>"; };
+		07A8B77C2A3DEB8A00436696 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		07A8B77E2A3DEC4600436696 /* HealthKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		07A8B76C2A3DEA8B00436696 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
+				07A8B77B2A3DEADE00436696 /* Steps.entitlements */,
 				07A8B76D2A3DEA8B00436696 /* StepsApp.swift */,
 				07A8B76F2A3DEA8B00436696 /* ContentView.swift */,
+				07A8B77C2A3DEB8A00436696 /* HealthKitManager.swift */,
+				07A8B77E2A3DEC4600436696 /* HealthKitViewModel.swift */,
 				07A8B7712A3DEA8C00436696 /* Assets.xcassets */,
 				07A8B7732A3DEA8C00436696 /* Preview Content */,
 			);
@@ -138,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A8B7702A3DEA8B00436696 /* ContentView.swift in Sources */,
+				07A8B77F2A3DEC4600436696 /* HealthKitViewModel.swift in Sources */,
 				07A8B76E2A3DEA8B00436696 /* StepsApp.swift in Sources */,
+				07A8B77D2A3DEB8A00436696 /* HealthKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +274,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Steps/Steps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
 				DEVELOPMENT_TEAM = H7MDDDPC4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow this app to access your Health data.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow this app to write Health data based on.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +306,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Steps/Steps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
 				DEVELOPMENT_TEAM = H7MDDDPC4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow this app to access your Health data.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow this app to write Health data based on.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
